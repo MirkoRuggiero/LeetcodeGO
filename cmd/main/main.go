@@ -51,7 +51,6 @@ func main() {
 		{Input: []interface{}{[]int{2, 3, 5, 1, 3}, 3}, ExpectedOutput: []bool{true, true, true, false, true}},
 	}
 
-	// Run tests for the addOne function
 	exercise := NewExercise(kidswithcandies.KidsWithCandies, "KidsWithCandies")
 	RunTests(*exercise, testCases)
 
@@ -91,10 +90,10 @@ func main() {
 	//===========================================================================================
 
 	testCases = []TestCase{
-		//{Input: []interface{}{[]int{5, 10, -5}}, ExpectedOutput: []int{5, 10}},
-		//{Input: []interface{}{[]int{8, -8}}, ExpectedOutput: []int{}},
-		//{Input: []interface{}{[]int{10, 2, -5}}, ExpectedOutput: []int{10}},
-		//{Input: []interface{}{[]int{-2, -1, 1, 2}}, ExpectedOutput: []int{-2, -1, 1, 2}},
+		{Input: []interface{}{[]int{5, 10, -5}}, ExpectedOutput: []int{5, 10}},
+		{Input: []interface{}{[]int{8, -8}}, ExpectedOutput: []int{}},
+		{Input: []interface{}{[]int{10, 2, -5}}, ExpectedOutput: []int{10}},
+		{Input: []interface{}{[]int{-2, -1, 1, 2}}, ExpectedOutput: []int{-2, -1, 1, 2}},
 		{Input: []interface{}{[]int{1, -1, -2, -2}}, ExpectedOutput: []int{-2, -2}},
 	}
 
